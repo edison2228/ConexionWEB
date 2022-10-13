@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>BeMovil</title>
+
+        <link href="BeMovil_files/unsemantic-grid-responsive.css" rel="stylesheet" type="text/css" media="all">
+        <link href="BeMovil_files/demonium.css" rel="stylesheet" type="text/css" media="all">
+        <link href="BeMovil_files/slicknav.css" rel="stylesheet" type="text/css" media="all">
+        <link href="BeMovil_files/timepicker.css" rel="stylesheet" type="text/css" media="all">
+        <link href="BeMovil_files/apprise-v2.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://sirse.bemovil.ec/static/imgs/favicon.ico?ver=2022101018" id="favicon" rel="shortcut icon">
+        <link href="BeMovil_files/jquery-ui.css" rel="stylesheet" type="text/css" media="all">
+        <link href="BeMovil_files/jquery.dataTables.css" rel="stylesheet" type="text/css" media="all">
+        <link href="BeMovil_files/jquery.sidr.dark.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="BeMovil_files/buttons.dataTables.min.css" rel="stylesheet" type="text/css" media="all">
+
+        <link rel="stylesheet" crossorigin="anonymous" href="BeMovil_files/main.css"><script async="" src="BeMovil_files/analytics.js"></script><script src="BeMovil_files/globals.js"></script>
+        <script src="BeMovil_files/jquery.js"></script>
+        <script src="BeMovil_files/jquery-loader.js"></script>
+        <script src="BeMovil_files/apprise-v2.js"></script>
+        <script src="BeMovil_files/jquery-ui.min.js"></script>
+        <script src="BeMovil_files/jquery.dataTables.min.js"></script>
+        <script src="BeMovil_files/dataTables.buttons.min.js"></script>
+        <script src="BeMovil_files/jszip.min.js"></script>
+        <script src="BeMovil_files/buttons.html5.min.js"></script>
+        <script src="BeMovil_files/natural.js"></script>
+        <script src="BeMovil_files/lazysizes.min.js"></script>
+        <script src="BeMovil_files/js.cookie.min.js"></script>
+
+
+
+
+
+    
+    <script type="text/javascript" src="BeMovil_files/script.js"></script>
+
+    
+    
+        <script type="text/javascript">
+            var sessionSecurity = new yourlabs.SessionSecurity({
+                pingUrl: '/session_security/ping/',
+                warnAfter: 7000,
+                expireAfter: 7200,
+                confirmFormDiscard: "Un formulario de esta página tiene cambios sin guardar"
+            });
+        </script>
+        
+
+
+    
+    
+        <header class="hide-on-mobile">
+            <div class="grid-100">
+                
+          <br>
+                <div class="saldo" style="color: rgb(255, 255, 255);" id="id_transaction">
+                    <!--
+                    
+                        <p class="temp_balance" style="display:inline; ">Mi Caja: 1,39</p>
+                        <br>
+                        <p class="pos_balance" style="display:inline; color: yellow;">Mi Ahorro: 1,0901</p>-->
+                    
+                </div>
+                
+                    <img src="BeMovil_files/logbemovil.png" alt="" id="header_logo">
+                
+            </div>
+            <nav>
+        
+            </nav>
+        </header>
+    
+    
+    <div class="principal" xmlns="http://www.w3.org/1999/html">
+        <div class="grid-container">
+            <div class="topup_title">Módulo Multiproducto</div>
+            <div class="grid-100">
+
+                <div class="grid-33 logos hide-on-mobile">
+                    <div>Paquetes</div><br>
+                        
+                             <li><img id="Paquemovistar" onclick="recargar(this,'685821')" src="BeMovil_files/paquemovistar.jpg" alt="" title="Paquemovistar" class="operador" data="685821"></li>
+                        
+                             <li><img id="Paqueclaro" onclick="recargar(this,'685822')" src="BeMovil_files/paqueclaro.jpg" alt="" title="Paqueclaro" class="operador" data="685822"></li>
+                        
+                             <li><img id="Paquetuenti" onclick="recargar(this,'685823')" src="BeMovil_files/tuenti.png" alt="" title="Paquetuenti" class="operador activo" data="685823"></li>
+                        
+                             <li><img id="Paquecnt" onclick="recargar(this,'685824')" src="BeMovil_files/cnt.png" alt="" title="Paquecnt" class="operador" data="685824"></li>
+                        
+                             <li><img id="Paquemaxi" onclick="recargar(this,'685828')" src="BeMovil_files/paquemaxi.png" alt="" title="Paquemaxi" class="operador" data="685828"></li>
+                        
+                           <!--<li><img id="Paqueaki" onclick="recargar(this,'685829')" src="BeMovil_files/paqueaki.png" alt="" title="Paqueaki" class="operador" data="685829"></li>-->
+                        
+                </div>
+                <div class="formulario grid-33">
+          
+                        <div class="clear"></div>
+                        <div id="numbers">
+                            Número de línea
+                                
+                                <input type="text" name="serviceNumber" class="number ui-autocomplete-input" placeholder="09XXXXXXXX" required id="id_serviceNumber" autocomplete="off" maxlength="10">
+                        </div>
+
+                        <div class="clear"></div>
+                        <div id="numbers">
+                            Valor a recargar                                
+                                <input type="text" name="serviceNumber" class="number ui-autocomplete-input" required id="id_serviceValor" autocomplete="off" maxlength="10">
+                        </div>
+
+                        <div class="clear"></div>
+                       
+                        <div class="clear"></div>
+                        <input type="button" value="Limpiar" id="reseter" onclick="limpiar()" class="val-activo limpiar">
+                        <input type="button" value="Recargar" onclick="enviar_recarga()" class="enviar">
+    
+                </div>
+                      </div>
+
+
+        </div>
+    </div>
+ 
+    
+        <script>let pos_enabed = true;</script>
+    
+    <script>
+        var paqueClarosUrl = '/api/get-paqueclaro-categories/';
+        var movistarpUrl = '/api/get-movistarp-categories/';
+        var tuentipUrl = '/api/get-tuentip-categories/';
+        var cntpUrl = '/api/get-cntp-categories/';
+        var maxipUrl = '/api/get-maxip-categories/';
+        var akipUrl = '/api/get-akip-categories/';
+
+        mobileList = [
+            
+        ];
+    </script>
+
+    <link href="BeMovil_files/paque_selector.css" rel="stylesheet" type="text/css" media="all">
+    <script src="BeMovil_files/topupRt.js"></script><ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
+    <link href="BeMovil_files/switch.css" rel="stylesheet" type="text/css" media="all">
+    <div id="sidr">
+    </div>
+
+          <script src="BeMovil_files/jquery.sidr.min.js"></script>
+        <script src="BeMovil_files/jquery.slicknav.js"></script>
+        <script src="BeMovil_files/demonium.js"></script>
+        <script src="BeMovil_files/jquery.ui.datepicker-es.js"></script>
+        <script src="BeMovil_files/main.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                let url = window.location.href.split('/')[0] + "//sirse.bemovil.ec/notifications/get/";
+                $('#notifications-button').sidr({
+                    name: 'sidr-notifications',
+                    side: 'right',
+                    displace: false,
+                    source: url
+                });
+            });
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-63405022-2', 'auto');
+                ga('send', 'pageview');
+        </script>
+    
+
+
+<div class="apprise-overlay" style="opacity: 0.8;"></div><div class="apprise"></div><div id="sidr-notifications" style="transition: right 0.2s ease 0s;" class="sidr right">
+
+
+    <style>
+        td.details-control {
+            background: url('//i.imgur.com/SD7Dz.png') no-repeat center center;
+            cursor: pointer;
+        }
+
+        tr.shown td.details-control {
+            background: url('//i.imgur.com/d4ICC.png') no-repeat center center;
+        }
+
+        #close-menu-button {
+            display: block;
+            padding-bottom: 40px;
+            background: url(/static/logos/close.svg) no-repeat;
+            background-size: 20%;
+            overflow: hidden;
+            text-indent: -9999px;
+        }
+
+        .details-table > tbody > tr > th {
+            color: white;
+            background-color: #c41123;
+
+        }
+    </style>
+
+
+</div></body></html>
+
+<script>
+    var id_operador="";
+    var name_operador=""
+function recargar(valor,id_oper){
+
+id_operador=id_oper
+name_operador=valor.id
+
+}
+function enviar_recarga(){
+
+//var x = document.getElementById("operadora").selectedIndex;
+  //  var y = document.getElementById("operadora").options;
+
+var data = new FormData();
+data.append("vdataJSON", JSON.stringify(
+    [
+        {
+            name_operadora:name_operador,
+            operadora:id_operador, 
+            numero:document.getElementById("id_serviceNumber").value, 
+            valor:document.getElementById("id_serviceValor").value,
+            id_trasaction:Math.floor(Math.random() * 100000000)
+        }
+    ]
+        )
+        );
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function() {
+if(this.readyState === 4) {
+console.log(this.responseText);
+}
+});
+
+xhr.open("POST", "http://192.168.100.19:8090/mbaDEMO");
+
+xhr.send(data);
+
+
+}
+function evalLong(nombre, ci){
+document.getElementById("datos").value=nombre+"\n"+ci
+}
+function limpiar(){
+    document.getElementById("id_serviceNumber").value = ""
+    document.getElementById("id_serviceValor").value = ""
+    document.getElementById("datos").value="";
+}
+function envioJson(id_transac){
+    document.getElementById("id_transaction").innerHTML  = "ID: " +id_transac
+}
+
+
+</script>

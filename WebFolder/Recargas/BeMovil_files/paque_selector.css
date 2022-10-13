@@ -1,0 +1,157 @@
+/************************ wilman ******************************/
+.formulario.grid-33 {
+    padding: 0px;
+}
+
+.grid-100.opciones {
+    margin-top: 20px;
+    box-shadow: 0px 0px 23px -3px grey;
+    padding: 0px;
+    /* max-height: 308px;
+    overflow-x: auto;*/
+    border-radius: 3px;
+}
+
+.o-servicios {
+    /*width: 110px;*/
+    background: red;
+    font-size: 0.8em;
+    padding: 0px;
+
+}
+
+.o-servicios .serv {
+    padding: 5% 3px 5% 13px;
+    border: 1px solid #7c7c7c;
+    text-align: left;
+    background: #fc0000;
+    color: #fff;
+    background: -moz-linear-gradient(top, #fc0000 0%, #a5000d 68%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc0000), color-stop(68%, #a5000d));
+    background: -webkit-linear-gradient(top, #fc0000 0%, #a5000d 68%);
+    background: -o-linear-gradient(top, #fc0000 0%, #a5000d 68%);
+    background: -ms-linear-gradient(top, #fc0000 0%, #a5000d 68%);
+    background: linear-gradient(to bottom, #fc0000 0%, #a5000d 68%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc0000', endColorstr='#a5000d', GradientType=0);
+}
+
+.serv span {
+    display: block;
+}
+
+.o-planes {
+    padding: 0px;
+    max-height: 303px;
+    overflow: auto;
+}
+
+.price-element {
+    /*display: flex;*/
+    /* float: left; */
+    padding: 11px 5px;
+    font-size: 1.2em;
+    background-image: linear-gradient(180deg,#00A896 0%,#028090 48.40%,#05668D 100%);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    text-align: center;
+    margin: 0px 5px 4px 0px;
+    min-width: 90px;
+}
+
+.price-element span{
+    font-size: 0.7em;
+    font-weight: lighter;
+}
+
+.text-element {
+    font-size: 0.74em;
+    padding: 1% 12px 0% 2px;
+    /*padding: 1% 2px 0%;*/
+    display: flex;
+    /* width: 71%; */
+    /* float: left; */
+    text-align: left;
+    background-color: #edf3fa;
+}
+
+.text-element p {
+    margin-top: 5px;
+}
+
+.text-element span {
+    display: block;
+}
+
+.text-price p{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.text-price p span {
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.element {
+    padding: 0px;
+    display: inline-block;
+    border: 1px solid #b3b3b3;
+    width: 100%;
+}
+
+/************************/
+.opciones ul {
+    /* width: 100px;*/
+    text-align: left;
+    color: #fff;
+    padding: 0;
+}
+
+.opciones ul li {
+    font-size: 0.9em;
+    padding: 0.63em;
+    border: 1px solid #7c7c7c;
+    background: -moz-linear-gradient(top, #fc0000 0%, #a5000d 68%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc0000), color-stop(68%, #a5000d));
+    background: -webkit-linear-gradient(top, #fc0000 0%, #a5000d 68%);
+    background: -o-linear-gradient(top, #fc0000 0%, #a5000d 68%);
+    background: -ms-linear-gradient(top, #fc0000 0%, #a5000d 68%);
+    background: linear-gradient(to bottom, #fc0000 0%, #a5000d 68%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc0000', endColorstr='#a5000d', GradientType=0);
+    cursor: pointer;
+    float: left;
+}
+
+li.serv a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.opciones {
+    display: none;
+}
+
+.text-element:hover {
+    background-color: #ccd8eb;
+}
+
+.clic {
+    border: 2px solid #e51c23;
+    background-color: #ccd8eb;
+}
+
+li.serv-clic {
+    background: #05668D !important;
+}
+
+@media screen and (max-width: 767px ) {
+    .opciones ul li {
+        display: block;
+        height: 51px;
+        padding: 5px;
+        float: left;
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>envio</title>
+</head>
+<style>
+    body {
+  font-family: trebuchet ms;
+  min-width: 261px;
+  background-color: rgba(220,231,245,1.00);
+}
+</style>
+<body>
+ 
+    <br>
+    <div id="datos"></div>
+<!--<textarea id="datos" name="datos" rows="4" cols="50" style="width: 100%;"></textarea>-->
+
+</body>
+</html> 
+<script>
+function envioJson(json_data){
+    // var data=JSON.stringify(json_data)
+ document.getElementById("datos").innerHTML=JSON.stringify(json_data)
+
+ //return "ok";
+ }
+ </script>
